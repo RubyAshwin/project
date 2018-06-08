@@ -1,13 +1,15 @@
-page-home{
-.card-content{
+page-doctor {
 
-   color: white
 
-   
-}
-.item {
-    background-color: #ffffff !important;
-    color: #000000;
+    .item {
+        background-color: rgb(0, 0, 0) !important;
+        opacity: 0.7;
+
+    }
+
+
+h1,h2,h3,header{
+    color: white
 }
 .content {
     
@@ -25,8 +27,5 @@ page-home{
         }
         
     
-    }
-    .button{
-        background-color: #0a0909
     }
 }

@@ -1,0 +1,81 @@
+page-login{ 
+.content {
+    
+    background-color: black;
+        .fixed-content {
+            background-image: url("../assets/imgs/image6.jpg");
+            background-repeat:no-repeat;
+            background-size:     cover;                      
+            background-repeat:   no-repeat;
+            background-position: center center;   
+            opacity: 0.3;
+            width:100%;
+            height:100%;
+            
+        }
+        
+    
+    }
+
+    .list{
+        width: 350px;
+        background-color: #268ef0 ;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-top: 50px;
+        margin-left: -17px
+    
+    }
+
+.item{
+    background-color:#268ef0 ;
+ 
+}
+    .label {
+    
+        color: rgb(255,255,255);
+    }
+    .input{
+        color: white
+    }
+    
+
+        
+        .logo {
+            margin-left: 15%;
+            margin-right: auto;
+            display: block;
+            height: 45px;
+            width:140px;
+        }
+        
+        ion-navbar.toolbar {
+            min-height: 60px;
+          }
+        .loginbtn {
+            width: 69%;
+            background-color: #fff;
+            color: #1828c0;
+            border-radius: 6px;
+            margin-left: 17%;
+
+            
+        }
+    
+        
+        .alert-ios .alert-radio-label{ white-space: pre-line;}
+        .alert-md .alert-radio-label{ white-space: pre-line;}
+        .alert-wp .alert-radio-label{ white-space: pre-line;}
+        .select-text{white-space: pre-line;}
+    
+    }
+    .toolbar-background {
+        background-color: #08c0f8;
+    }
+    .social {
+        color: rgb(233, 33, 33); 
+        background-color: #fff !important;
+        font-size: 25px;
+        
+    }
+  

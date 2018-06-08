@@ -1,17 +1,18 @@
-page-home{
-.card-content{
+page-category {
 
-   color: white
 
-   
+.button{
+    background-color: black;
+    color: white
 }
-.item {
-    background-color: #ffffff !important;
-    color: #000000;
+
+
+.header{
+    background-color: black
 }
 .content {
     
-    background-color: black;
+    background-color: #08c0f8;
         .fixed-content {
             background-image: url("../assets/imgs/image6.jpg");
             background-repeat:no-repeat;
@@ -23,10 +24,9 @@ page-home{
             height:100%;
             
         }
-        
-    
     }
-    .button{
-        background-color: #0a0909
-    }
+
+.item{
+    opacity: 0.9;
+}
 }

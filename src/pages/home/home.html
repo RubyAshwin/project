@@ -3,22 +3,40 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-
 </ion-header>
 
-<ion-card>
 
+<ion-content>
     <ion-card-content>
-      <ion-card-title>
+      <header>
         Patient Name : Ruby Ashwin
-        </ion-card-title>
+
+      </header>
+
         <p>
             Age : 23
           </p>
       <p>
         Address :
         11,Banglore,Karnataka.
+
+       
       </p>
+<h2>Your appointment date on : {{info}} </h2>
+
+<ion-item>
+<ion-label>Reschedule Appointment</ion-label>
+<ion-select [(ngModel)]="info" >
+
+  <ion-option>Monday</ion-option>
+  <ion-option>Tuesday</ion-option>
+  <ion-option>Wednesday</ion-option>
+  <ion-option>Thursday</ion-option>
+  <ion-option>Friday</ion-option>
+
+</ion-select>
+</ion-item>
+
 
     </ion-card-content>
-  </ion-card>
+  </ion-content>

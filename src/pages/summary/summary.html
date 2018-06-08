@@ -1,0 +1,72 @@
+
+
+<ion-navbar>
+  <ion-title>summary</ion-title>
+</ion-navbar>
+
+
+
+  <img src="../assets/imgs/image6.jpg">
+
+    <ion-card-title>
+DR.Doctor 1, M.D.
+<ion-chip>
+  <ion-icon name="medkit"></ion-icon>
+  <ion-label>Dentist , Dental Surgeon
+    </ion-label></ion-chip>
+      </ion-card-title>
+    <ion-chip>
+        <ion-icon name="call">  </ion-icon>
+        <ion-label>+65744586288</ion-label>
+      </ion-chip>
+         <ion-chip>
+          <ion-icon name="time"></ion-icon>
+          <ion-label>9.00 AM-7.00 PM</ion-label>
+          </ion-chip>
+
+    
+
+
+
+<ion-item>
+ 
+    <ion-label>Appointment Day</ion-label>
+    <ion-select [(ngModel)]="day" >
+      <ion-option>Monday</ion-option>
+      <ion-option>Tuesday</ion-option>
+      <ion-option>Wednesday</ion-option>
+      <ion-option>Thursday</ion-option>
+      <ion-option>Friday</ion-option>
+
+    </ion-select>
+
+
+    
+</ion-item>
+<ion-list>
+
+
+<button ion-button block (click)="appConfirm()">BOOK APPOINTMENT</button>
+
+
+
+</ion-list>
+<ion-list>
+  <ion-chip>
+      <ion-icon name="briefcase"></ion-icon>
+      <ion-label>Education
+        </ion-label></ion-chip>
+<P>
+New York University of Nursing-B.S.N.
+Undergraduate School | Graduated 1983
+New York University College of Dentistry-D.D.S
+Medical School | Graduated 1989
+
+
+
+
+</P>
+</ion-list>
+       
+
+

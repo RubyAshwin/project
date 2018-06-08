@@ -1,0 +1,19 @@
+
+<ion-header>
+      <ion-title>
+            <button ion-button menuToggle>
+                    <ion-icon name="menu"></ion-icon>
+                  </button>
+        Category List
+      </ion-title>
+
+  </ion-header>
+  
+  <ion-content>
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    <ion-list>
+      <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+        {{ item }}
+      </button> 
+    </ion-list>
+  </ion-content>

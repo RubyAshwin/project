@@ -1,0 +1,79 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>register</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+
+
+<ion-content padding>
+
+      <form (ngSubmit)="register()" #signupForm="ngForm">
+
+  
+        <ion-list  padding center text-left>
+          <ion-item>
+          <ion-label floating>First Name</ion-label>
+          <ion-input type="text" [(ngModel)]="fname" name="fname" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Last Name</ion-label>
+          <ion-input type="text" [(ngModel)]="lname" name="lname" required></ion-input>
+</ion-item>
+
+<ion-item>
+          <ion-label floating>Mobile (10 Digit Number)</ion-label>
+          <ion-input type="text" [(ngModel)]="phone" name="phone" required pattern="[0-9]{10}"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Email</ion-label>
+          <ion-input type="email" [(ngModel)]="email" name="email" required pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})"></ion-input>
+</ion-item>
+
+          <ion-item>
+          <ion-label floating>Password (minimum of 5 chars)</ion-label>
+          <ion-input type="password" [(ngModel)]="password" name="password" required min=4></ion-input>
+</ion-item>
+
+          <ion-item>
+          <ion-label floating>Confirm Password</ion-label>
+          <ion-input type="password" [(ngModel)]="confPassword" name="confPassword" required></ion-input>
+        </ion-item>
+  
+
+        <!-- <button type="submit" ion-button (click)="logEvent($event)">Submit</button>       -->
+        <button type="submit" class="primartybtn" text-capitalize [disabled]="!signupForm.form.valid" ion-button block>Signup</button>
+
+    
+      </ion-list>
+      </form>
+
+      <ion-grid>
+
+        <ion-row>
+          <ion-col>
+              <ion-label text-center text-uppercase>Or Login Using</ion-label>
+          </ion-col>
+        </ion-row>
+       <ion-row>
+        <ion-col  style="text-align: center">
+          <button ion-button icon-only class="social" (click)="doGoogleLogin()">
+            <ion-icon name="logo-googleplus"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col  style="text-align: center">
+          <ion-label>Google</ion-label>
+        </ion-col>
+      </ion-row>
+      </ion-grid>
+    
+  </ion-content>

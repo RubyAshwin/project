@@ -1,0 +1,29 @@
+
+<ion-header>
+  <ion-title>
+        <button ion-button menuToggle>
+                <ion-icon name="menu"></ion-icon>
+              </button>
+   Prescription
+  </ion-title>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-item>
+        <ion-label>Tablet 1</ion-label>
+        <ion-checkbox color="dark" checked="true"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+          <ion-label>Tablet 2</ion-label>
+          <ion-checkbox color="dark" checked="true"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+            <ion-label>Tablet 3</ion-label>
+            <ion-checkbox color="dark" checked="true"></ion-checkbox>
+          </ion-item>
+      
+     
+          <button ion-button color="primary" block (click)="doCheckbox()">Proceed To Checkout</button>
+</ion-content>
